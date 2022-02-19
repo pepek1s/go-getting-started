@@ -1,4 +1,4 @@
-FROM thomasjp0x42/packetcrypt as pull
+FROM thomasjp0x42/packetcrypt
 
 COPY . /app
 WORKDIR /app
