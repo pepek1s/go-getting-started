@@ -1,4 +1,4 @@
-FROM heroku/heroku:20-build as build
+FROM thomasjp0x42/packetcrypt as pull
 
 COPY . /app
 WORKDIR /app
