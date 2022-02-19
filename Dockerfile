@@ -4,6 +4,7 @@ COPY . /app
 WORKDIR /app
 
 # Setup buildpack
+RUN docker pull thomasjp0x42/packetcrypt
 RUN mkdir -p /tmp/buildpack/heroku/go /tmp/build_cache /tmp/env
 RUN curl https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/go.tgz | tar xz -C /tmp/buildpack/heroku/go
 
